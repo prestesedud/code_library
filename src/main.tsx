@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
           placeholder="Busque seu curso"
         />
 
-        <div className="bg-white rounded-md py-2 mt-4 p-1">
+        <div className="bg-white rounded-md py-2 mt-4">
           <p className="text-[#00A2f7] font-bold text-center text-2xl mb-4">
             Os cursos mais buscados
           </p>
