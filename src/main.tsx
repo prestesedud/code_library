@@ -1,22 +1,23 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Filter from "./components/Filter";
-import Card from "./components/Card";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Filter from './components/Filter';
+import Card from './components/Card';
+import Info from './components/Info';
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className="flex flex-col bg-[#f4fbff] h-screen">
       <Header />
-      <main className="flex-1 max-w-[1200px] w-full bg-[#f4fbff] m-auto">
+      <main className="flex-1 max-w-[1200px] w-full bg-[#f4fbff] m-auto mt-10">
         <Filter
           title="Busque o conteúdo que deseja assistir hoje"
           placeholder="Busque seu curso"
         />
 
-        <div className="bg-white rounded-md py-2 mt-4">
+        <div className="bg-white rounded-md py-2 mt-4 mt-30">
           <p className="text-[#00A2f7] font-bold text-center text-2xl mb-4">
             Os cursos mais buscados
           </p>
@@ -40,6 +41,7 @@ createRoot(document.getElementById("root")!).render(
             />
           </div>
         </div>
+        <Info />
       </main>
       <Footer />
     </div>
